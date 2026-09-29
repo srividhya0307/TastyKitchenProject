@@ -1,0 +1,59 @@
+.restaurant-details-page {
+  min-height: calc(100vh - 76px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px max(24px, 7%) 64px;
+  background: #f6f3ee;
+}
+
+.restaurant-summary {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 28px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #3b3128;
+  box-shadow: 0 12px 28px rgba(65, 45, 20, 0.14);
+}
+
+.restaurant-summary img {
+  width: 280px;
+  height: 190px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.restaurant-summary h1,
+.restaurant-summary p {
+  margin: 0 0 12px;
+}
+
+.restaurant-summary p {
+  color: #e7ded2;
+}
+
+.details-loader {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.details-error {
+  padding: 40px;
+  color: #d32f2f;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .restaurant-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .restaurant-summary img {
+    width: 100%;
+    height: 220px;
+  }
+}

@@ -1,0 +1,43 @@
+.restaurants-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.restaurants-header h2,
+.restaurants-header p {
+  margin: 0;
+}
+
+.restaurants-header h2 {
+  color: #2d241b;
+  font-size: 24px;
+}
+
+.restaurants-header p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+}
+
+.sort-control select {
+  border: 0;
+  color: #1e293b;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .restaurants-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
